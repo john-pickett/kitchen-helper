@@ -1,1 +1,16 @@
 <h1>Welcome to Kitchen Helper</h1>
+
+<h3>Chicken Recipes</h3>
+<% @chicken.each do |recipe| %>
+  <p><%= recipe.title %><p>
+<% end %>
+
+<h3>Ground Beef Recipes</h3>
+<% @beef.each do |recipe| %>
+  <p><%= recipe.title %><p>
+<% end %>
+
+<h3>Pork Recipes</h3>
+<% @pork.each do |recipe| %>
+  <p><%= recipe.title %><p>
+<% end %>

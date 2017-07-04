@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Recipe</th><th>Cuisine</th><th>Details</th><th>Edit</th><th>Delete</th>
+      <th>Recipe</th><th>Main Ingredient</th><th>Cuisine</th><th>Details</th><th>Edit</th><th>Delete</th>
     </tr>
   </thead>
 
@@ -11,6 +11,7 @@
     <% @recipes.each do |recipe| %>
       <tr>
         <td><%= recipe.title %></td>
+        <td><%= recipe.main %></td>
         <td><%= recipe.cuisine %></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
